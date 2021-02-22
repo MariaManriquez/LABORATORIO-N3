@@ -1,6 +1,7 @@
 import express from "express";
-import { router } from "../app.js";
-import ServiceController from "../controller/ServiceController.js";
-var services = new ServiceController();
-router.length("/", services.index);
-export default router;
+import express from "express";
+import ServicesController from "../controller/ServicesController.js";
+var services = new ServicesController();
+routes.get("/", services.index);
+export default routes;
+//module.exports = routes;
